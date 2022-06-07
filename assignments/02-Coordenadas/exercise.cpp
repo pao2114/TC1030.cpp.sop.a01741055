@@ -3,6 +3,8 @@
 
 #include "Rect.hpp"
 #include "Polar.hpp"
+#include "Rectr.hpp"
+#include "Polard.hpp"
 
 int main() 
 {
@@ -32,5 +34,23 @@ int main()
 
   std::cout << "Multiplicando coordenadas polares:\n";
   std::cout << p1 << " * \n" << p2 << " = \n" << p3;
+  
+  Rectr r5(4,8);
+  Rectr r6(2,1);
+  Rectr r7;
 
+
+  r7 = r5 - r6;
+
+  std::cout << "Restando coordenadas rectangulares:\n";
+  std::cout << r5 << " - \n" << r6 << " = \n" << r7;
+
+  Polard p4(4,M_PI / 6);
+  Polard p5(5, M_PI/ 6);
+  Polard p6;
+
+  p6 = p4 / p5;
+
+  std::cout << "División coordenadas polares:\n";
+  std::cout << p4 << " / \n" << p5 << " = \n" << p6;
 }
